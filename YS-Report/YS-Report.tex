@@ -27,23 +27,28 @@
 
 \section{Introduction}
 
-BIG ASS TODO
+BIG ASS TODO\cite{DUMMY:1}
+
+\section{Specification}
+
+Talk through each section of the flowchart
 
 \section{Pre-Processing}
 
-This section will aim to cover the different aspects of pre-processing employed in this project. Within the datasets used in this project, we can see that the general steps one would need to take are as follows:\\
+This section will aim to cover the different aspects of pre-processing employed in this project. Within the datasets used in this project, we can see that the general steps one would need to take are as follows:
 \begin{itemize}
 \item Lemmatization
 \item Removal of stop words
 \item Removal punctuation
 \end{itemize} 
+Along with the aforementioned steps, the text will be processed to handle case. This is done by converting the text to lower case before any text normalization is done. 
 
 \subsection{Lemmatization}
 
-\textbf{First version:} Lemmatization is a technique employed to remove inflection and/or derive the base form of a word in the dataset. As an example, the words, \emph{cleaning}, \emph{cleaner}, \emph{cleanliness} can all be reduced to its base word, \emph{clean}.\\\\
-Such mapping then allows us to find all relevant documents using a specific word. \\\\
-\textbf{Second version:} Lemmatization is a form of text normalization where the aim is to remove inflection and/or derive the base word from a family of words in the dataset. As an example:
-\begin{center}
+Lemmatization is a form of text normalization where the aim is to remove inflection and/or derive the base word from a family of words in the dataset. The base of a word, is also known as the \textbf{lemma} or the \textbf{dictionary form}. An example of which is shown in \emph{Table \ref{table: lemma}} below.\\\\
+Such mapping then allows us to find all relevant documents using a specific word.
+\begin{table}[h!]
+\centering
 \begin{tabular}{c c c}
 \hline
 \textbf{Word} & & \textbf{Lemma}\\
@@ -55,22 +60,41 @@ Such mapping then allows us to find all relevant documents using a specific word
 \text{Cleanliness} & \(\rightarrow\) & \text{Clean}\\
 \hline
 \end{tabular}
+\caption{Showing the mapping of words to its lemma}
+\label{table: lemma}
+\end{table}
+
+\subsection{Removal of Stop Words}
+
+Stop words are words such as "the", "he" or "in". These words do not contribute to the overall meaning of the text and are thus removed during the pre-processing stage. This also tends to be done in order to improve indexing times for larger datasets.
+
+\subsection{Removal of Punctuation}
+
+Punctuation, like stop words are removed due to their lack of contribution to the overall understanding of the text.  
+
+\section{Machine Learning Methods}
+
+This section will aim to provide some knowledge on the machine learning models employed in this project. 
+
+\subsection{Support Vector Machine}
+
+A Support Vector Machine (SVM) is a discriminative classification method. This method produces a classification by finding an optimal hyperplane that segregates the data points and thus returns classifications. This can be visualized easiest on a 2-Dimensional plot as can be seen below:
+\begin{center}
+\begin{minipage}[]{0.45\textwidth}
+\includegraphics[scale=0.15]{svm}
+\caption{•}
+\end{minipage}
+\hspace{0.5 cm}
+\begin{minipage}[]{0.45\textwidth}
+\includegraphics[scale=0.15]{svm_kernel}
+\end{minipage}
 \end{center}
-
-\subsection{Stop Words}
-
-//todo
-
-\subsection{Punctuation}
-
-//todo
-%\section{Machine Learning Methods}
-
 %\section{Datasets Used}
 
 %\section{Measurement Metrics}
 
 %\section{Results}
-
-
+\newpage
+\bibliography{references}
+\bibliographystyle{ieeetr}
 \end{document}

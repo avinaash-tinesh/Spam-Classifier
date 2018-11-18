@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.16)  18 NOV 2018 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.12)  18 NOV 2018 19:58
 entering extended mode
 **./YS-Report.tex
 (YS-Report.tex
@@ -314,49 +314,83 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count121
  [1
 
-{C:/Users/Avinaash Tinesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(YS-Report.toc)
+{C:/Users/Rogue One/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (YS-Rep
+ort.toc)
 \tf@toc=\write3
 \openout3 = `YS-Report.toc'.
 
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+bch on input line 36.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsbch.fd"
+[1]
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 40.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsbch.fd"
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
+Underfull \hbox (badness 10000) in paragraph at lines 48--66
 
  []
 
-[2] (YS-Report.aux) ) 
+[2]
+<Assets/svm.png, id=15, 1383.1675pt x 1131.22626pt>
+File: Assets/svm.png Graphic file (type png)
+<use Assets/svm.png>
+Package pdftex.def Info: Assets/svm.png  used on input line 84.
+(pdftex.def)             Requested size: 207.46617pt x 169.6766pt.
+
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \caption
+             {•}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (16.64032pt too wide) in paragraph at lines 84--86
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+
+ []
+
+<Assets/svm_kernel.png, id=17, 1524.69624pt x 1247.66125pt>
+File: Assets/svm_kernel.png Graphic file (type png)
+<use Assets/svm_kernel.png>
+Package pdftex.def Info: Assets/svm_kernel.png  used on input line 89.
+(pdftex.def)             Requested size: 228.69456pt x 187.14111pt.
+
+Overfull \hbox (37.86871pt too wide) in paragraph at lines 89--90
+[][] 
+ []
+
+[3 <./Assets/svm.png> <./Assets/svm_kernel.png>] (YS-Report.bbl) [4]
+(YS-Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5346 strings out of 492972
- 77812 string characters out of 3135850
- 149126 words of memory out of 3000000
- 9143 multiletter control sequences out of 15000+200000
+ 5366 strings out of 492972
+ 78126 string characters out of 3135868
+ 150138 words of memory out of 3000000
+ 9156 multiletter control sequences out of 15000+200000
  34300 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,305b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<
-C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on YS-Report.pdf (3 pages, 49991 bytes).
+ 42i,9n,40p,350b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on YS-Report.pdf (5 pages, 91633 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
+ 40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

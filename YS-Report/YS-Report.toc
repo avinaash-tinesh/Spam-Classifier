@@ -1,5 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{ii}
-\contentsline {section}{\numberline {2}Pre-Processing}{ii}
-\contentsline {subsection}{\numberline {2.1}Lemmatization}{ii}
-\contentsline {subsection}{\numberline {2.2}Stop Words}{ii}
-\contentsline {subsection}{\numberline {2.3}Punctuation}{ii}
+\contentsline {section}{\numberline {2}Specification}{ii}
+\contentsline {section}{\numberline {3}Pre-Processing}{ii}
+\contentsline {subsection}{\numberline {3.1}Lemmatization}{ii}
+\contentsline {subsection}{\numberline {3.2}Removal of Stop Words}{ii}
+\contentsline {subsection}{\numberline {3.3}Removal of Punctuation}{ii}
+\contentsline {section}{\numberline {4}Machine Learning Methods}{iii}
+\contentsline {subsection}{\numberline {4.1}Support Vector Machine}{iii}
