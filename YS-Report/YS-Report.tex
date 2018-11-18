@@ -17,17 +17,18 @@
 \begin{document}
 \begin{titlepage}
 \maketitle
-\thispagestyle{empty}
+\clearpage\thispagestyle{empty}
 \end{titlepage}
 \doublespacing
 \setstretch{2}
 \tableofcontents
+\thispagestyle{empty}
 \newpage
 \singlespacing
 
 \section{Introduction}
 
-BIG ASS TODO\cite{DUMMY:1}
+BIG ASS TODO
 
 \section{Specification}
 
@@ -78,18 +79,29 @@ This section will aim to provide some knowledge on the machine learning models e
 
 \subsection{Support Vector Machine}
 
-A Support Vector Machine (SVM) is a discriminative classification method. This method produces a classification by finding an optimal hyperplane that segregates the data points and thus returns classifications. This can be visualized easiest on a 2-Dimensional plot as can be seen below:
-\begin{center}
+A Support Vector Machine (SVM) is a discriminative classification method. This method produces a classification by finding an optimal hyperplane that segregates the data points and thus returns classifications \cite{svm}. This can be visualized easiest on a 2-Dimensional plot as can be seen below in \emph{Figure \ref{fig:svm}}:
+\begin{figure}[h!]
+\centering
 \begin{minipage}[]{0.45\textwidth}
-\includegraphics[scale=0.15]{svm}
-\caption{•}
+\includegraphics[scale=0.16]{svm}
+\caption{SVM on 2-D plot area}
+\label{fig:svm}
 \end{minipage}
 \hspace{0.5 cm}
 \begin{minipage}[]{0.45\textwidth}
-\includegraphics[scale=0.15]{svm_kernel}
+\includegraphics[scale=0.16]{svm_kernel}
+\caption{Kernel feature of SVM}
+\label{fig:svm_kernel}
 \end{minipage}
-\end{center}
-%\section{Datasets Used}
+\end{figure}
+
+\emph{Figure \ref{fig:svm_kernel}} above shows an SVM making a classification on data where it would seem like there is no \emph{linear} hyperplane to be found. In order to make a classification, the SVM employs the kernel method \cite{ray2017svm}. This transformation, introduces a new dimension, by way of suggesting that for every \textbf{x} and \textbf{x'}, there is a function \emph{k} such that \emph{k} is equivalent to the sum of the squares of \textbf{x} and \textbf{x'} \cite{hofmann2008kernel}. This transformation then allows the model to find an optimal hyperplane within this third dimension. Transforming this back into a 2-Dimensional plot, the hyperplane is mapped as a circular boundary around the classified data points.
+
+\subsection{Random Forest}
+
+Random Forest is a supervised learning algorithm. The way it works is by 
+  
+%\section{Datasets Used} 
 
 %\section{Measurement Metrics}
 
