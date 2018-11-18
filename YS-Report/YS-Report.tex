@@ -17,6 +17,7 @@
 \begin{document}
 \begin{titlepage}
 \maketitle
+\thispagestyle{empty}
 \end{titlepage}
 \doublespacing
 \setstretch{2}
@@ -30,9 +31,40 @@ BIG ASS TODO
 
 \section{Pre-Processing}
 
-This section will aim to cover the different aspects of pre-processing employed in this project. With this specific dataset, 
+This section will aim to cover the different aspects of pre-processing employed in this project. Within the datasets used in this project, we can see that the general steps one would need to take are as follows:\\
+\begin{itemize}
+\item Lemmatization
+\item Removal of stop words
+\item Removal punctuation
+\end{itemize} 
 
-%\section{SVM (Title could change to Machine Learning Methods)}
+\subsection{Lemmatization}
+
+\textbf{First version:} Lemmatization is a technique employed to remove inflection and/or derive the base form of a word in the dataset. As an example, the words, \emph{cleaning}, \emph{cleaner}, \emph{cleanliness} can all be reduced to its base word, \emph{clean}.\\\\
+Such mapping then allows us to find all relevant documents using a specific word. \\\\
+\textbf{Second version:} Lemmatization is a form of text normalization where the aim is to remove inflection and/or derive the base word from a family of words in the dataset. As an example:
+\begin{center}
+\begin{tabular}{c c c}
+\hline
+\textbf{Word} & & \textbf{Lemma}\\
+\hline
+\text{Cleaning} & \(\rightarrow\) & \text{Clean}\\
+\hline
+\text{Cleaner}  & \(\rightarrow\) & \text{Clean}\\
+\hline
+\text{Cleanliness} & \(\rightarrow\) & \text{Clean}\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Stop Words}
+
+//todo
+
+\subsection{Punctuation}
+
+//todo
+%\section{Machine Learning Methods}
 
 %\section{Datasets Used}
 

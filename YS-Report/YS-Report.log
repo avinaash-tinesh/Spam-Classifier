@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.16)  17 NOV 2018 21:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.16)  18 NOV 2018 13:51
 entering extended mode
 **./YS-Report.tex
 (YS-Report.tex
@@ -319,21 +319,44 @@ Package caption Info: End \AtBeginDocument code.
 \tf@toc=\write3
 \openout3 = `YS-Report.toc'.
 
- [1] [2] (YS-Report.aux) ) 
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 36.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsbch.fd"
+File: omsbch.fd 
+)
+LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
+
+ []
+
+[2] (YS-Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5321 strings out of 492972
- 77323 string characters out of 3135850
- 146126 words of memory out of 3000000
- 9124 multiletter control sequences out of 15000+200000
- 27306 words of font info for 41 fonts, out of 3000000 for 9000
+ 5346 strings out of 492972
+ 77812 string characters out of 3135850
+ 149126 words of memory out of 3000000
+ 9143 multiletter control sequences out of 15000+200000
+ 34300 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,40p,291b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on YS-Report.pdf (3 pages, 26462 bytes).
+ 42i,7n,40p,305b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<
+C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on YS-Report.pdf (3 pages, 49991 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
+ 29 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
