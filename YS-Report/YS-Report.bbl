@@ -1,5 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{schutze2008introduction}
+H.~Sch{\"u}tze, C.~D. Manning, and P.~Raghavan, {\em Introduction to
+  information retrieval}, vol.~39.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{jabeen2018stem}
+H.~Jabeen, ``Stemming and lemmatization in python.''
+  https://www.datacamp.com/community/tutorials/stemming-lemmatization-python,
+  2018 (accessed November 17, 2018).
+
+\bibitem{fortney2017nlp}
+K.~Fortney, ``Pre-processing in natural language machine learning.''
+  https://towardsdatascience.com/pre-processing-in-natural-language-machine-learning-898a84b8bd47,
+  2017 (accessed November 17, 2018).
+
 \bibitem{svm}
 S.~Patel, ``Chapter 2 : Svm support vector machine theory.''
   https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72,
