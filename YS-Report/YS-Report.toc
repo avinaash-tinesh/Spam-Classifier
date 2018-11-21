@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{ii}
-\contentsline {section}{\numberline {2}Specification}{iii}
-\contentsline {subsection}{\numberline {2.1}Pseudocode}{iv}
-\contentsline {section}{\numberline {3}Pre-Processing}{iv}
-\contentsline {subsection}{\numberline {3.1}Lemmatization}{iv}
-\contentsline {subsection}{\numberline {3.2}Removal of Stop Words}{iv}
-\contentsline {subsection}{\numberline {3.3}Removal of Punctuation}{iv}
-\contentsline {section}{\numberline {4}Machine Learning Methods}{iv}
-\contentsline {subsection}{\numberline {4.1}Support Vector Machine}{v}
-\contentsline {subsection}{\numberline {4.2}Random Forest}{v}
-\contentsline {subsection}{\numberline {4.3}Multilayer Perceptron}{v}
+\contentsline {section}{\numberline {2}Specification}{ii}
+\contentsline {subsection}{\numberline {2.1}Pseudocode}{iii}
+\contentsline {section}{\numberline {3}Pre-Processing}{v}
+\contentsline {subsection}{\numberline {3.1}Lemmatization}{v}
+\contentsline {subsection}{\numberline {3.2}Removal of Stop Words}{v}
+\contentsline {subsection}{\numberline {3.3}Removal of Punctuation}{v}
+\contentsline {section}{\numberline {4}Machine Learning Methods}{v}
+\contentsline {subsection}{\numberline {4.1}Support Vector Machine}{vi}
+\contentsline {subsection}{\numberline {4.2}Random Forest}{vi}
+\contentsline {subsection}{\numberline {4.3}Multilayer Perceptron}{vi}

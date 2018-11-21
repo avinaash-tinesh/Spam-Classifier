@@ -28,19 +28,82 @@
 
 \section{Introduction}
 
-BIG ASS TODO
-\newpage
+This project is tasked with the classification of spam emails, to a high degree of accuracy using machine learning models. This report will aim to provide an overview of the datasets used, an understanding of how the models used work and the results obtained from running these models on the datasets mentioned.  
 \section{Specification}
 
+This section will walk through the flowchart shown in \emph{Figure~\ref{fig:flowchart}}.
+
+\subsubsection*{Load Emails}
+
+Firstly, the emails need to be loaded into the program in order to parse through them and begin the pre-processing stage. This involves reading in all the files in the folder and saving them to a variable for manipulation further on in the program. 
+
+\subsubsection*{Pre-Process Data}
+
+This stage is where the data is processed to convert case, remove elements such as punctuation and stop words and is where the process of lemmatization happens. This process is also referred to as normalization. These entities are removed due to their inherent lack of relevance to the end classification. Lemmatization on the other hand is done in order to reduce the complexity of the generated dictionary in the next step and thus  the overall runtime of the algorithms on the dataset.
+
+\subsubsection*{Dictionary Creation}
+
+This process, mentioned briefly above, entails the tallying of the most commonly occurring words in all the emails in the dataset. This is done such that a correlation can be obtained when reading through similar pieces of text. This allows us to see if the emails share similarities and thus may be classed under a label. The generated dictionary is then compared to the features extracted from each email.
+
+\subsubsection*{Feature Extraction}
+
+The feature extraction phase entails extracting a feature vector for all emails in the dataset. The features contain the number of occurrences of each entity in the email, with respect to the dictionary generated.  
+
+\subsubsection*{Split Dataset}
+
+The dataset is split into a test set and a training set. This is done such that the model can be trained on a subset of the dataset as a whole and the model can then be evaluated on the same data. The split is done at approximately 70 / 30, where the training set is 70\% of the full dataset and the remaining 30\% is used as the test set.
+
+\subsubsection*{Train Model}
+
+The models are trained with a subset of the dataset as mentioned above. 
+
+\subsubsection*{Pre-Trained Model}
+
+This process is where the pre-trained model is tested with the test set obtained from when the dataset was split.
+
+\subsubsection*{Evaluate Trained Model}
+
+The outputs of the models used here are evaluated using the performance matrices: Accuracy, Precision, Recall and F1-Score. The unlabelled dataset used here is the same test set, but without any accompanying labels designating the entities classification.
+
+\subsection{Pseudocode}
+
+\begin{lstlisting}[frame=single]
+begin
+
+    begin load_emails
+        load emails into program
+        split dataset into test set and training set
+    end load_emails
+	
+    begin pre_processing
+        convert text to lower case
+        remove stop_words
+        lemmatize text
+    end pre_processing
+	
+    begin create_dictionary
+        generate dictionary
+    end create_dictionary
+	
+    begin feature_extraction
+        extract feature vectors for all emails
+    end feature_extraction
+	
+    Train models on training set
+    Test models on test set
+    Generate predictions using models
+    Evaluate model predictions
+    
+end
+\end{lstlisting}
+\newpage
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.2]{spam_flowchart}
-\caption{Flowchart for the Spam Classification process}
+\caption{Flowchart for the general Spam Classification process}
+\label{fig:flowchart}
 \end{figure}
-
-Talk through each section of the flowchart
 \newpage
-\subsection{Pseudocode}
 
 \section{Pre-Processing}
 
@@ -54,8 +117,8 @@ Along with the aforementioned steps, the text will be processed to handle case. 
 
 \subsection{Lemmatization}
 
-Lemmatization is a form of text normalization where the aim is to remove inflection and/or derive the base word from a family of words in the dataset \cite{schutze2008introduction,jabeen2018stem,fortney2017nlp}. The base of a word, is also known as the \textbf{lemma} or the \textbf{dictionary form}. An example of which is shown in \emph{Table \ref{table: lemma}} below.\\\\
-Such mapping then allows us to find all relevant documents using a specific word.
+Lemmatization is a form of text normalization where the aim is to remove inflection and/or derive the base word from a family of words in the dataset \cite{schutze2008introduction,jabeen2018stem,fortney2017nlp}. The base of a word, is also known as the \textbf{lemma} or the \textbf{dictionary form}. This process also leads to a decrease in complexity during the runtime of the algorithm. An example of which is shown in \emph{Table \ref{table: lemma}} below.\\\\
+Such mapping also allows us to find all relevant documents using a specific word.
 \begin{table}[h!]
 \centering
 \begin{tabular}{c c c}

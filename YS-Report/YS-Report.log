@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.12)  20 NOV 2018 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.12)  21 NOV 2018 06:39
 entering extended mode
 **./YS-Report.tex
 (YS-Report.tex
@@ -321,36 +321,37 @@ ort.toc)
 
 [1
 
-] [2]
-<Assets/spam_flowchart.png, id=13, 1330.9725pt x 2522.42375pt>
+] [2] [3]
+<Assets/spam_flowchart.png, id=17, 1317.92375pt x 2522.42375pt>
 File: Assets/spam_flowchart.png Graphic file (type png)
 <use Assets/spam_flowchart.png>
-Package pdftex.def Info: Assets/spam_flowchart.png  used on input line 37.
-(pdftex.def)             Requested size: 266.18979pt x 504.47581pt.
- [3 <./Assets/spam_flowchart.png>]
-LaTeX Font Info:    Try loading font information for OMS+bch on input line 49.
+Package pdftex.def Info: Assets/spam_flowchart.png  used on input line 102.
+(pdftex.def)             Requested size: 263.58008pt x 504.47581pt.
+ [4 <./Assets/spam_flowchart.png>]
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 112.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsbch.fd"
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--75
+Underfull \hbox (badness 10000) in paragraph at lines 120--138
 
  []
 
-<Assets/svm.png, id=19, 1108.14pt x 812.03375pt>
+<Assets/svm.png, id=23, 1108.14pt x 812.03375pt>
 File: Assets/svm.png Graphic file (type png)
 <use Assets/svm.png>
-Package pdftex.def Info: Assets/svm.png  used on input line 94.
+Package pdftex.def Info: Assets/svm.png  used on input line 157.
 (pdftex.def)             Requested size: 177.30602pt x 129.92805pt.
-<Assets/svm_kernel.png, id=20, 1118.1775pt x 844.15375pt>
+<Assets/svm_kernel.png, id=24, 1118.1775pt x 844.15375pt>
 File: Assets/svm_kernel.png Graphic file (type png)
 <use Assets/svm_kernel.png>
-Package pdftex.def Info: Assets/svm_kernel.png  used on input line 100.
+Package pdftex.def Info: Assets/svm_kernel.png  used on input line 163.
 (pdftex.def)             Requested size: 178.91205pt x 135.06735pt.
-[4] [5 <./Assets/svm.png> <./Assets/svm_kernel.png>] (YS-Report.bbl
+[5] [6 <./Assets/svm.png> <./Assets/svm_kernel.png>] (YS-Report.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
 []\T1/bch/m/n/10.95 H. Jabeen, ``Stem-ming and lemma-ti-za-tion in python.''
  []
@@ -385,27 +386,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
 -vector-
  []
 
-) [6] (YS-Report.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [7] (YS-Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5379 strings out of 492972
- 78390 string characters out of 3135868
- 151172 words of memory out of 3000000
- 9168 multiletter control sequences out of 15000+200000
+ 5639 strings out of 492972
+ 80360 string characters out of 3135868
+ 161179 words of memory out of 3000000
+ 9428 multiletter control sequences out of 15000+200000
  34300 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,40p,777b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb>
-Output written on YS-Report.pdf (7 pages, 184532 bytes).
+ 42i,9n,40p,777b,1005s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+}<C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on YS-Report.pdf (8 pages, 188707 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

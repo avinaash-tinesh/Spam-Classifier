@@ -1,0 +1,42 @@
+
+-------------------- Data has been loaded --------------------
+
+--------------------  Pre-Processing Complete --------------------
+
+-------------------- Dictionary Creation Complete --------------------
+
+-------------------- Feature Extraction Complete --------------------
+
+...Training Complete...
+
+Results for Machine Learning Models on Lingspam Data
+
+-----------------------------------------------
+
+Linear Support Vector Machine Classifier Results
+
+Accuracy Score: 0.9461538461538461
+Precision Score: 0.9393939393939394
+Recall: 0.9538461538461539
+F1 Score: 0.9465648854961831
+
+-----------------------------------------------
+
+Random Forest Classifier Results
+
+Accuracy Score: 0.9730769230769231
+Precision Score: 0.9555555555555556
+Recall: 0.9923076923076923
+F1 Score: 0.9735849056603774
+
+-----------------------------------------------
+
+Multilayer Perceptron Classifier (relu) Results
+
+Accuracy Score: 0.9807692307692307
+Precision Score: 0.9844961240310077
+Recall: 0.9769230769230769
+F1 Score: 0.9806949806949806
+
+-----------------------------------------------
+
