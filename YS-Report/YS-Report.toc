@@ -5,7 +5,21 @@
 \contentsline {subsection}{\numberline {3.1}Lemmatization}{v}
 \contentsline {subsection}{\numberline {3.2}Removal of Stop Words}{v}
 \contentsline {subsection}{\numberline {3.3}Removal of Punctuation}{v}
-\contentsline {section}{\numberline {4}Machine Learning Methods}{v}
+\contentsline {section}{\numberline {4}Machine Learning Methods}{vi}
 \contentsline {subsection}{\numberline {4.1}Support Vector Machine}{vi}
 \contentsline {subsection}{\numberline {4.2}Random Forest}{vi}
 \contentsline {subsection}{\numberline {4.3}Multilayer Perceptron}{vi}
+\contentsline {section}{\numberline {5}Datasets Used}{vii}
+\contentsline {subsection}{\numberline {5.1}Ling-Spam Dataset}{vii}
+\contentsline {subsection}{\numberline {5.2}Enron Dataset}{vii}
+\contentsline {section}{\numberline {6}Measurement Metrics}{vii}
+\contentsline {subsection}{\numberline {6.1}Accuracy}{viii}
+\contentsline {subsection}{\numberline {6.2}Precision}{viii}
+\contentsline {subsection}{\numberline {6.3}Recall}{viii}
+\contentsline {subsection}{\numberline {6.4}F1-Score}{viii}
+\contentsline {section}{\numberline {7}Results and Discussion}{viii}
+\contentsline {subsection}{\numberline {7.1}Results on Ling-Spam data}{ix}
+\contentsline {subsection}{\numberline {7.2}Results on Enron data}{x}
+\contentsline {section}{\numberline {A}Code}{xii}
+\contentsline {subsection}{\numberline {A.1}utility.py}{xii}
+\contentsline {subsection}{\numberline {A.2}spam\textunderscore classifier.py}{xvi}

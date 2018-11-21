@@ -1,0 +1,32 @@
+
+Results for Machine Learning Models on lingspam-dataset with Enron Dictionary
+
+-----------------------------------------------
+
+Linear Support Vector Machine Classifier Results
+
+Accuracy Score: 0.9461538461538461
+Precision Score: 0.9461538461538461
+Recall: 0.9461538461538461
+F1 Score: 0.9461538461538461
+
+-----------------------------------------------
+
+Random Forest Classifier Results
+
+Accuracy Score: 0.9769230769230769
+Precision Score: 0.9626865671641791
+Recall: 0.9923076923076923
+F1 Score: 0.9772727272727273
+
+-----------------------------------------------
+
+Multilayer Perceptron Classifier (relu) Results
+
+Accuracy Score: 0.9307692307692308
+Precision Score: 0.9117647058823529
+Recall: 0.9538461538461539
+F1 Score: 0.9323308270676691
+
+-----------------------------------------------
+

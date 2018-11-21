@@ -8,6 +8,8 @@
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{listings}
+\usepackage{color}
+
 \graphicspath{{Assets/}}
 
 \title{CSCU9YE Assignment Report}
@@ -20,7 +22,7 @@
 \clearpage\thispagestyle{empty}
 \end{titlepage}
 \doublespacing
-\setstretch{2}
+\setstretch{1}
 \tableofcontents
 \thispagestyle{empty}
 \newpage
@@ -28,7 +30,8 @@
 
 \section{Introduction}
 
-This project is tasked with the classification of spam emails, to a high degree of accuracy using machine learning models. This report will aim to provide an overview of the datasets used, an understanding of how the models used work and the results obtained from running these models on the datasets mentioned.  
+This project is tasked with the classification of spam emails, to a respectable degree of accuracy using machine learning models. Specifically, this project will employ a Support Vector Machine, Random Forest Classifier and Multilayer Perceptron Classifier. This report will aim to provide an overview of the datasets used, an understanding of how the models used work and the results obtained from running these models on the datasets mentioned.  
+
 \section{Specification}
 
 This section will walk through the flowchart shown in \emph{Figure~\ref{fig:flowchart}}.
@@ -66,9 +69,9 @@ This process is where the pre-trained model is tested with the test set obtained
 The outputs of the models used here are evaluated using the performance matrices: Accuracy, Precision, Recall and F1-Score. The unlabelled dataset used here is the same test set, but without any accompanying labels designating the entities classification.
 
 \subsection{Pseudocode}
-
+Shown below is the pseudocode for the spam classification algorithm:
 \begin{lstlisting}[frame=single]
-begin
+begin spam_classification
 
     begin load_emails
         load emails into program
@@ -94,7 +97,7 @@ begin
     Generate predictions using models
     Evaluate model predictions
     
-end
+end spam_classification
 \end{lstlisting}
 \newpage
 \begin{figure}[h!]
@@ -144,6 +147,7 @@ Stop words are words such as "the", "he" or "in". These words do not contribute 
 
 Punctuation, like stop words are removed due to their lack of contribution to the overall understanding of the text.  
 
+\newpage
 \section{Machine Learning Methods}
 
 This section will aim to provide some knowledge on the machine learning models employed in this project. 
@@ -174,14 +178,155 @@ Random Forest is a supervised learning algorithm. The way it works is by generat
 
 \subsection{Multilayer Perceptron}
 
-A Multilayer Perceptron (MLP), is a form of feedforward artificial neural network. 
+A Multilayer Perceptron (MLP), is a form of feedforward artificial neural network. Its general structure consists of an input layer, a number of hidden layers and an output layer. Within each of these layers there are neurons which compute an output based on an activation function. This activation function is different based on what sort of problem the MLP is being applied onto. In the case of this project, the activation function used is the ReLU, the rectified linear unit function.
+ 
+Each neuron within each layer is connected by a weighted connection. This weight is randomly assigned at the start of the model's training epoch and is refined through the process of backpropagation. This process is how the MLP 'learns'. This process of backpropagation is repeated until the error from the output can no longer be reduced or is zero. At the end of this process, the model returns a classification. 
   
-%\section{Datasets Used} 
+\section{Datasets Used} 
 
-%\section{Measurement Metrics}
+This section will provide a brief description of the datasets used in this project.
 
-%\section{Results}
+\subsection{Ling-Spam Dataset} 
+
+The Ling-Spam dataset used in this project was that provided in the assignment brief. This dataset is a subset of the Ling-Spam corpus, a set of legitimate and spam emails sent via the Linguist list (a mailing list on linguistics). The original corpus consisted of 2893 emails, of which, 481 were spam and the remaining 2412 were legitimate. In the subset provided, the dataset consists of 962 total emails, both spam and legitimate. Of those emails, 702 were used in the training set and the remaining 260 were used as the test set. 
+
+This dataset had already been neatly organized into a 50/50 split of spam and non spam emails in each respective subset, this allowed for a fairly simple process of pre-processing the data.
+
+\subsection{Enron Dataset}
+
+In addition to the dataset referred to above, this project will be using the Enron corpus of spam and legitimate emails. This corpus originally consists of 500,000 emails. The dataset used in this project however is a subset of that corpus, containing 33,699 emails. Of these emails, 17,154 were spam and 16,545 were legitimate. This dataset was split into a training set and test set using a ratio of 70 / 30 respectively.
+
+An important thing to note is that this is not the subset in its entirety, since upon extraction of the files, the anti-virus software on my computer locked certain files from being able to be modified and thus needed to be removed from the dataset in order for the program to run.
+
+\section{Measurement Metrics}
+
+This section aims to provide an overview of the metrics used to evaluate the models run in this project. For the sake of brevity, the abbreviations used in the equations for each metric are listed below:
+\begin{itemize}
+\item \emph{TP} = True Positives 
+\item \emph{FP} = False Positives 
+\item \emph{TN} = True Negatives 
+\item \emph{FN} = False Negatives.
+\end{itemize}
+
+\subsection{Accuracy}
+
+Accuracy is a metric that evaluates the fraction of correct predictions a model has made with respect to the overall predictions the model has made~\cite{accuracy}. Formally, Accuracy for binary classification tasks is defined as such:\\
+\begin{equation}
+Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+
+\subsection{Precision}
+
+Precision is a metric that calculates the proportion of correctly classified instances. A high precision value indicates a low amount of False Positives generated. This equation is formally defined as:\\
+\begin{equation}
+Precision = \frac{TP}{TP + FP}
+\end{equation}
+
+\subsection{Recall}
+
+Recall is used to find the proportion of actual positive classifications are accurate. A Recall value of 1 indicates that the model provided no False Negatives.  This equation is formally defined as such:\\
+\begin{equation}
+Recall = \frac{TP}{TP + FN}
+\end{equation}
+
+\subsection{F1-Score}
+The F1-Score provides the balance between the Precision and Recall values from the model outputs. In essence, the closer the F1-Score is to 1, the more accurate the model is in its classifications. This equation is defined as such:\\
+\begin{equation}
+F1-Score = 2 \left(\frac{Precision * Recall}{Precision + Recall}\right)
+\end{equation}
+
+\section{Results and Discussion}
+
+This section will provide the results of the models running on the datasets as mentioned above in the report and aim to draw a conclusion from it. To note, for both datasets, the models were run with the same hyperparameters where applicable. This was done such that the produced results were affected solely by the dataset they were run on and not by any additional tuning for optimization within a specific search space. 
+
+For the Support Vector Machine, the specific variation used from the \emph{scikit-learn} library was the \emph{LinearSVC}. It was run with a \emph{max\textunderscore iters} parameter of 5000. 
+
+For the Random Forest Classifier, the model was run with a \emph{n\textunderscore estimators} parameter value of 2000. This means that it will generate 2000 Decision Trees in its Forest.
+\newpage
+The Multilayer Perceptron used was \emph{MLPClassifer} from the library and it was run with the following parameters:\\
+\begin{itemize}
+\item \emph{hidden\textunderscore layer\textunderscore sizes} = (6,6,6,6,6,6,6,5,5,5,5,5,2)
+\item \emph{solver} = lbfgs
+\item \emph{alpha} = 1e-05
+\item \emph{random\textunderscore state} = 2
+\end{itemize}
+
+These parameters were chosen for the \emph{MLPClassifier} through a combination of reading through the \emph{scikit-learn} API for this specific model and looking at how each parameter affects the output of the model by testing different outputs on both datasets with different parameter settings. Additionally, looking through the conventions within this library for parameter settings depending on the size of the dataset greatly assisted in the final parameter settings used. 
+
+\subsection{Results on Ling-Spam data}
+
+The results obtained by running all the aforementioned models on the Ling-Spam dataset is as shown below:\\
+\begin{table}[!h]
+\centering
+\begin{tabular}{c c c c c}
+ & Accuracy & Precision & Recall & F1-Score\\
+\hline
+Linear SVM & 0.94615 & 0.93939 & 0.95385 & 0.94656\\
+\hline 
+Random Forest Classifier & 0.97308 & 0.95555 & 0.99230 & 0.97358\\
+\hline
+MLP & 0.98077 & 0.98449 & 0.97692 & 0.98069\\
+\hline
+\end{tabular}
+\caption{Table showing results for machine learning models on Ling-Spam dataset}
+\label{table:lingspam}
+\end{table}
+
+We can observe from the data as shown in \emph{Table~\ref{table:lingspam}} above, the Random Forest Classifier and MLP performed the best in the test set. It is interesting to note however that, although the MLP objectively performed better across the board compared to the Random Forest Classifier, it has a noticeably worse Recall score. This difference is not so significant that it adversely affects the classifications obtained, however it is noteworthy that Random Forest is known to perform well on binary classification problems.
+
+\newpage
+
+\subsection{Results on Enron data}
+
+The results as obtained from running the models on the Enron dataset is as follows:\\
+\begin{table}[!h]
+\centering
+\begin{tabular}{c c c c c}
+ & Accuracy & Precision & Recall & F1-Score\\
+\hline
+Linear SVM & 0.96747 & 0.97112 & 0.96573 & 0.96842\\
+\hline 
+Random Forest Classifier & 0.97745 & 0.97418 & 0.98238 & 0.97826\\
+\hline
+MLP & 0.97063 & 0.97548 & 0.96745 & 0.97145\\
+\hline
+\end{tabular}
+\caption{Table showing results for machine learning models on Enron dataset}
+\label{table:enron}
+\end{table}
+
+We can immediately see from the data shown in \emph{Table~\ref{table:enron}} that there are a number of similarities observable from the results on the previous dataset. The Linear SVM is the poorest performing model, the MLP performing the best overall and the Random Forest Classifier performing almost similarly to the MLP, only performing better on Recall score. This does cement the idea that Random Forest does perform optimally for  
+
 \newpage
 \bibliography{references}
 \bibliographystyle{ieeetr}
+\newpage
+
+\appendix
+
+\definecolor{my_magenta}{rgb}{0.8, 0.2, 0.4}
+\definecolor{my_blue}{rgb}{0.33, 0.56, 0.93}
+\definecolor{my_gray}{rgb}{0.5,0.5,0.5}
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\small\ttfamily,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{my_gray},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{my_magenta},       % keyword style
+  stringstyle=\color{my_blue},     % string literal style
+  showspaces=false,
+  showtabs=false,
+  showstringspaces=false, 
+}
+
+\section{Code}
+
+\subsection{utility.py}
+\lstinputlisting[language=Python]{utility.py}
+\newpage
+\subsection{spam\textunderscore classifier.py}
+\lstinputlisting[language=Python]{spam_classifier.py}
+
 \end{document}
