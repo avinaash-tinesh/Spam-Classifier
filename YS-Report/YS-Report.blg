@@ -1,9 +1,27 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: YS-Report.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
-""" immediately follows a field name---line 69 of file references.bib
+""" immediately follows a field name---line 79 of file references.bib
  :  year
  :      "2017 (accessed November 17, 2018)",
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 107 of file references.bib
+ : 
+ : year="2018 (accessed November 19, 2018)"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 114 of file references.bib
+ : 
+ : year="2018 (accessed November 19, 2018)"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 122 of file references.bib
+ : 
+ : year="2014 (accessed November 19, 2018)"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--there's a month but no year in svm
-(There was 1 error message)
+Warning--there's a month but no year in accuracy
+Warning--there's a month but no year in precision_recall
+Warning--there's a month but no year in f1
+(There were 4 error messages)

@@ -20,6 +20,7 @@
 \contentsline {section}{\numberline {7}Results and Discussion}{viii}
 \contentsline {subsection}{\numberline {7.1}Results on Ling-Spam data}{ix}
 \contentsline {subsection}{\numberline {7.2}Results on Enron data}{x}
+\contentsline {subsection}{\numberline {7.3}Discussion}{x}
 \contentsline {section}{\numberline {A}Code}{xii}
 \contentsline {subsection}{\numberline {A.1}utility.py}{xii}
 \contentsline {subsection}{\numberline {A.2}spam\textunderscore classifier.py}{xvi}

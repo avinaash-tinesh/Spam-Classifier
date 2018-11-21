@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{schutze2008introduction}
 H.~Sch{\"u}tze, C.~D. Manning, and P.~Raghavan, {\em Introduction to
@@ -29,5 +29,34 @@ S.~Ray, ``Understanding support vector machine algorithm from examples (along
 \bibitem{hofmann2008kernel}
 T.~Hofmann, B.~Sch{\"o}lkopf, and A.~J. Smola, ``Kernel methods in machine
   learning,'' {\em The annals of statistics}, pp.~1171--1220, 2008.
+
+\bibitem{randforest}
+L.~Breiman and A.~Cutler, ``Random forests,'' n.d.
+
+\bibitem{sakkis2003memory}
+G.~Sakkis, I.~Androutsopoulos, G.~Paliouras, V.~Karkaletsis, C.~D. Spyropoulos,
+  and P.~Stamatopoulos, ``A memory-based approach to anti-spam filtering for
+  mailing lists,'' {\em Information retrieval}, vol.~6, no.~1, pp.~49--73,
+  2003.
+
+\bibitem{enron}
+W.~W. Cohen, ``Enron email dataset.'' https://www.cs.cmu.edu/~./enron/, May
+  2015 (accessed November 19, 2018).
+
+\bibitem{accuracy}
+``Classification: Accuracy.''
+  https://developers.google.com/machine-learning/crash-course/classification/accuracy,
+  Oct.
+
+\bibitem{precision_recall}
+``Classification: Precision and recall.''
+  https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall,
+  Oct.
+
+\bibitem{f1}
+J.~Brownlee, ``Classification accuracy is not enough: More performance measures
+  you can use.''
+  https://machinelearningmastery.com/classification-accuracy-is-not-enough-more-performance-measures-you-can-use/,
+  Mar.
 
 \end{thebibliography}

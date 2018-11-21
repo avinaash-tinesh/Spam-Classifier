@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.12)  21 NOV 2018 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.12)  21 NOV 2018 15:36
 entering extended mode
 **./YS-Report.tex
 (YS-Report.tex
@@ -362,10 +362,6 @@ File: Assets/svm_kernel.png Graphic file (type png)
 Package pdftex.def Info: Assets/svm_kernel.png  used on input line 167.
 (pdftex.def)             Requested size: 178.91205pt x 135.06735pt.
  [6 <./Assets/svm.png> <./Assets/svm_kernel.png>]
-
-LaTeX Warning: Citation `accuracy' on page vii undefined on input line 213.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -398,7 +394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
 \T1/bch/m/n/10.95 https://www.datacamp.com/community/tutorials/stemming-lemmati
-zation-python,
+zation-
  []
 
 
@@ -425,43 +421,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
 -vector-
  []
 
+
+Underfull \hbox (badness 3375) in paragraph at lines 24--28
+[]\T1/bch/m/n/10.95 S. Ray, ``Un-der-stand-ing sup-port vec-tor ma-chine al-go-
+rithm from ex-am-ples
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 52--55
+[]\T1/bch/m/n/10.95 ``Classification: Pre-ci-sion and re-call.'' https://develo
+pers.google.com/machine-
+ []
+
 ) [11] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 327.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 333.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) (utility.py [12]
-[13] [14]) [15] (spam_classifier.py [16] [17] [18]) [19] (YS-Report.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[13] [14]) [15] (spam_classifier.py [16]) [17] (YS-Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5985 strings out of 492972
- 85311 string characters out of 3135868
- 460940 words of memory out of 3000000
- 9755 multiletter control sequences out of 15000+200000
+ 5990 strings out of 492972
+ 85361 string characters out of 3135868
+ 435923 words of memory out of 3000000
+ 9760 multiletter control sequences out of 15000+200000
  36298 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,43p,777b,1806s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Rogue One\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ectt1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on YS-Report.pdf (20 pages, 272710 bytes).
+ <C:\Users\Rogu
+e One\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk>{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTe
+X 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bi
+tstrea/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on YS-Report.pdf (18 pages, 265001 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
