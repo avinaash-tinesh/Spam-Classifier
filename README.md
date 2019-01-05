@@ -1,2 +1,2 @@
 # CSCU9YS-Assignment
-Assignment Repo
+Spam email classifier implemented using Python and Scikit Learn
